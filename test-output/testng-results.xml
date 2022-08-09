@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6339" started-at="2022-07-01T10:53:35Z" finished-at="2022-07-01T10:53:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6339" started-at="2022-07-01T10:53:35Z" finished-at="2022-07-01T10:53:42Z">
+      <class name="com.omr.test.OMRBranchClub">
+        <test-method status="PASS" signature="login()[pri:1, instance:com.omr.test.OMRBranchClub@35d176f7]" name="login" duration-ms="3740" started-at="2022-07-01T16:23:35Z" finished-at="2022-07-01T16:23:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="addAddress()[pri:2, instance:com.omr.test.OMRBranchClub@35d176f7]" name="addAddress" duration-ms="736" started-at="2022-07-01T16:23:39Z" finished-at="2022-07-01T16:23:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="updateAddress()[pri:3, instance:com.omr.test.OMRBranchClub@35d176f7]" name="updateAddress" duration-ms="437" started-at="2022-07-01T16:23:40Z" finished-at="2022-07-01T16:23:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAddress -->
+        <test-method status="PASS" signature="getAddress()[pri:4, instance:com.omr.test.OMRBranchClub@35d176f7]" name="getAddress" duration-ms="407" started-at="2022-07-01T16:23:40Z" finished-at="2022-07-01T16:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAddress -->
+        <test-method status="PASS" signature="deleteaddress()[pri:5, instance:com.omr.test.OMRBranchClub@35d176f7]" name="deleteaddress" duration-ms="408" started-at="2022-07-01T16:23:41Z" finished-at="2022-07-01T16:23:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteaddress -->
+        <test-method status="PASS" signature="chageProfilePic()[pri:6, instance:com.omr.test.OMRBranchClub@35d176f7]" name="chageProfilePic" duration-ms="596" started-at="2022-07-01T16:23:41Z" finished-at="2022-07-01T16:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chageProfilePic -->
+      </class> <!-- com.omr.test.OMRBranchClub -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

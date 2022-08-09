@@ -1,0 +1,692 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Get user logtoken from login endpoint",
+        "description": "",
+        "id": "login-module-api-automation;get-user-logtoken-from-login-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1182739600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add header",
+            "match": {
+              "location": "LoginStep.userAddHeader()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 129764200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add basic authentication for login",
+            "match": {
+              "location": "LoginStep.userAddBasicAuthenticationForLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2141459200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User send \"POST\" request for login endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "LoginStep.userSendRequestForLoginEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2287100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "CommonStep.userVerifyStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 513024500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User verify login response body firstName present as \"suresh\" and get logtoken",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"suresh\"",
+                  "offset": 53
+                }
+              ],
+              "location": "LoginStep.userVerifyLoginResponseBodyFirstNamePresentAsAndGetLogtoken(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login module API automation",
+    "description": "",
+    "id": "login-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC1_Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify add new address to application through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-add-new-address-to-application-through-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 670000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111855600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add request body for add new address \"Suresh\",\"Kumar\",\"9876543210\",\"Bharathi Nagar\",\"31\",\"12\",\"33\",\"626118\",\"Chennai\",\"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Suresh\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Kumar\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"9876543210\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"Bharathi Nagar\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"31\"",
+                  "offset": 89
+                },
+                {
+                  "val": "\"12\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"33\"",
+                  "offset": 99
+                },
+                {
+                  "val": "\"626118\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 113
+                },
+                {
+                  "val": "\"home\"",
+                  "offset": 123
+                }
+              ],
+              "location": "AddressStep.userAddRequestBodyForAddNewAddress(String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 542925500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User send \"POST\" request for add new address endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForAddNewAddressEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "CommonStep.userVerifyStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User verify create address response message matches \"Address added successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address added successfully\"",
+                  "offset": 52
+                }
+              ],
+              "location": "AddressStep.userVerifyCreateAddressResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Address"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Verify update old address to application through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-update-old-address-to-application-through-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 491100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6020200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User add request body for update existing address \"Vinith\",\"Kumar\",\"9876543210\",\"Bharathi Nagar\",\"31\",\"12\",\"33\",\"626118\",\"Chennai\",\"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vinith\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Kumar\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"9876543210\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"Bharathi Nagar\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"31\"",
+                  "offset": 97
+                },
+                {
+                  "val": "\"12\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"33\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"626118\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 121
+                },
+                {
+                  "val": "\"home\"",
+                  "offset": 131
+                }
+              ],
+              "location": "AddressStep.userAddRequestBodyForUpdateExistingAddress(String,String,String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 401459000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User send \"PUT\" request for update existing address endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForUpdateExistingAddressEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "CommonStep.userVerifyStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2992400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User verify update address response message matches \"Address updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address updated successfully\"",
+                  "offset": 52
+                }
+              ],
+              "location": "AddressStep.userVerifyUpdateAddressResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Address"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Verify get address to application through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-get-address-to-application-through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 417200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 353600300,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User send \"GET\" request for get existing address endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForGetExistingAddressEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "CommonStep.userVerifyStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11138900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User verify get address response ststus matches \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 48
+                }
+              ],
+              "location": "AddressStep.userVerifyGetAddressResponseStstusMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Address"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Verify delete address to application through API",
+        "description": "",
+        "id": "address-module-api-automation;verify-delete-address-to-application-through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 636200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User add headers and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "AddressStep.userAddHeadersAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4330500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User add request body for delete address",
+            "match": {
+              "location": "AddressStep.userAddRequestBodyForDeleteAddress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 362794400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User send \"DELETE\" request for delete existing address endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 10
+                }
+              ],
+              "location": "AddressStep.userSendRequestForDeleteExistingAddressEndpoint(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "CommonStep.userVerifyStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3211800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User verify delete address response message matches \"Address deleted successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address deleted successfully\"",
+                  "offset": 52
+                }
+              ],
+              "location": "AddressStep.userVerifyDeleteAddressResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Address"
+          }
+        ]
+      }
+    ],
+    "name": "Address module API automation",
+    "description": "",
+    "id": "address-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC2_Address.feature",
+    "tags": [
+      {
+        "name": "@Address",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify change profilePic to application through API",
+        "description": "",
+        "id": "profilepic-module-api-automation;verify-change-profilepic-to-application-through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 412300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add headers,bearer authorization and multiPart for accessing upload profile picture",
+            "match": {
+              "location": "ChangeProfilePicStep.userAddHeadersBearerAuthorizationAndMultiPartForAccessingUploadProfilePicture()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8507800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add multipart for upload profile pic",
+            "match": {
+              "location": "ChangeProfilePicStep.userAddMultipartForUploadProfilePic()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 574605000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User send \"POST\" request to change ProfilePic endpoints",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ChangeProfilePicStep.userSendRequestToChangeProfilePicEndpoints(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "CommonStep.userVerifyStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8267400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User verify change profile pic response message matches \"Profile updated Successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile updated Successfully\"",
+                  "offset": 56
+                }
+              ],
+              "location": "ChangeProfilePicStep.userVerifyChangeProfilePicResponseMessageMatches(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProfilePic"
+          }
+        ]
+      }
+    ],
+    "name": "ProfilePic module API automation",
+    "description": "",
+    "id": "profilepic-module-api-automation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/TC3_ChangeProfilePic.feature",
+    "tags": [
+      {
+        "name": "@ProfilePic",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
